@@ -1,0 +1,55 @@
+.container-2{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.women, .men, .accessories{
+   text-align: center;
+}
+
+.women, .men, .accessories img:hover{
+   cursor: pointer;
+   transform: scale(1.1);
+}
+.women img:hover{
+    transform: scale(1.1);
+}
+
+.men img:hover{
+    transform: scale(1.1);
+}
+
+
+.women button{
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    font-size: 1rem;
+}
+
+.accessories button{
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    font-size: 1rem;
+}
+
+.men button{
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    font-size: 1rem;
+}
