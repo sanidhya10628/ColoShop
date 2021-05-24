@@ -1,14 +1,16 @@
 .container-2{
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     /* align-items: center; */
     justify-content: space-around;
+    /* background-color: #1d3557; */
 }
 
 .women, .men, .accessories{
    text-align: center;
+   /* background-color: #1d3557; */
 }
 
 .women, .men, .accessories img:hover{
@@ -52,4 +54,10 @@
     background-color: #555;
     color: white;
     font-size: 1rem;
+}
+
+
+.deal-of-the-day{
+    margin-top: 5rem;
+    background-color: skyblue;
 }
