@@ -4,6 +4,7 @@ body{
     padding: 0;
     background-color: rgb(255, 249, 249);
     background-color: #f5f0ed;
+     background-color: #fef8f5;
 } 
 
 .nav-bar{
@@ -68,5 +69,10 @@ body{
 }
 /* #shopping-cart :hover{
     background-color: rgb(177, 144, 144); 
+} */
+/* @media screen and (width:600px){
+    body{
+        background-color: pink;
+    }
 } */
 
