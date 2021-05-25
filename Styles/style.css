@@ -111,24 +111,27 @@ body{
 
 
 
-section{
+/* section{
     background: url('/images/sb.jpg') no-repeat center center/cover ;
-}
+} */
 .container{
     
     /* height; */
+    background: url('/images/sb.jpg') no-repeat center center/cover ;
     
     width: 100%;
     /* min-height: 100%; */
     height: 900px;
     opacity: 0.8;
-    position: relative;
+    /* position: relative; */
     
 }
 .text-box{
+
     position: absolute;
-    top: 4rem;
+    top: 12rem;
     right: 4rem;
+    /* color: yellow; */
 }
 .text-box p{
     font-size: 2.5rem;
@@ -149,6 +152,7 @@ section{
     position: relative;
     top: 20rem;
     left: 3rem;
+    display: inline-block;
 }
 .box-2 span{
     display: inline-block;
@@ -179,4 +183,68 @@ section{
     from {background-color:black;}
   to {background-color: rgb(245, 36, 36);
 }
+}
+.shop-by-category-header{
+    margin: 5rem 3rem;
+    text-align: center;
+
+}
+
+.shop-by-category-header h3{
+    font-size: 3rem;
+}
+
+.shop-by-category{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    /* margin: 10rem 3rem; */
+    text-align: center;
+
+}
+.shop-by-category-women img{
+    /* background-color: yellow; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shop-by-category-Accessories img {
+    /* background-color: blueviolet; */
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+}
+.shop-by-category-men img{
+    /* background-color: orange; */
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.shop-by-category button{
+    text-align: center;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shop-by-category button:hover{
+    animation-name: arr2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arr2 {
+    from {
+        background-color: black;
+    }
+    
+    to{
+        background-color: rgb(245, 36, 36);
+    }
 }
