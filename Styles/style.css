@@ -389,7 +389,7 @@ body{
 
 .form-subscribe-news-letter form button:hover{
     
-   /* background-color: #2577fd; */
+   /* background-color: c; */
    background-color: rgb(238, 191, 191);
 }
 
@@ -401,4 +401,78 @@ input[type=email]{
     background-color: rgb(199, 197, 197);
     
    
+}
+
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: 8rem 8rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    /* background-color: white; */
+    /* background-color: #2577fd; */
+    /* background-color: #007bff; */
+    /* background-color: #007bff; */
+    
+    
+}
+.features i{
+    font-size: 3rem;
+    color: #4cc9f0;
+    color: blue;
+}
+
+.features .free-shipping, .features .secure-payment, .features .refund-policy{
+    text-align: left;
+    /* background-color: yellow; */
+    background-color: pink;
+    flex-basis: 27%;
+    border-radius: 5px;
+    background-color: #ebefef;
+    padding: 2rem 1rem;
+    /* position: relative; */
+
+}
+
+
+.features .free-shipping:hover{
+    cursor: pointer;
+    /* position: relative;
+    animation-name: arr4;
+    animation-duration: 1s; */
+}
+
+.features .secure-payment:hover{
+    cursor: pointer;
+    /* position: relative;
+    animation-name: arr4;
+    animation-duration: 1s; */
+}
+
+.features .refund-policy:hover{
+    cursor: pointer;
+    /* position: relative;
+    animation-name: arr4;
+    animation-duration: 1s; */
+}
+/* @keyframes arr4 {
+    from{
+        background-color: #ebefef;
+        
+
+    }
+    to{
+        background-color:#4cc9f0;
+        color: white; 
+        width: 10px;
+    }
+    
+} */
+
+.features h3{
+    font-size: 1.5rem;
+    /* background-color: pink; */
 }
