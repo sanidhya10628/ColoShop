@@ -165,7 +165,9 @@ body{
 .box-2 button{
     border: none;
     padding: 16px 30px;
-    background-color: rgb(51, 3, 17);
+    /* background-color: rgb(51, 3, 17);
+    background-color: #ffb703; */
+    background-color: rgb(245, 36, 36);
     color: white;
     border-radius: 30px;
     cursor: pointer;
@@ -180,8 +182,9 @@ body{
 @keyframes arr1 {
 
 
-    from {background-color:black;}
-  to {background-color: rgb(245, 36, 36);
+    from {background-color:rgb(245, 36, 36);}
+  to {background-color: #aaf683;
+    color: black;
 }
 }
 .shop-by-category-header{
@@ -245,6 +248,62 @@ body{
     }
     
     to{
+        /* background-color: rgb(245, 36, 36); */
+        background-color: #4cc9f0;
+    }
+}
+
+
+.new-arrivals{
+    margin: 8rem 3rem;
+    text-align: center;
+}
+
+.new-arrivals-header h3{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.new-arrivals-header hr{
+    width: 10%;
+    border: 2px solid orange;
+    /* height: 1px; */
+    background-color: orange;
+}
+
+.new-arrivals-filter{
+    text-align: center;
+    padding: 20px;
+}
+
+.new-arrivals-filter ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.new-arrivals-filter ul button{
+    margin: auto 0.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(245, 36, 36); 
+    
+}
+
+.new-arrivals-filter ul button:hover{
+    animation-name: arr3;
+    animation-duration: 1s;
+}
+@keyframes arr3 {
+    from{
         background-color: rgb(245, 36, 36);
+    }
+    
+    to {
+        background-color: rgb(253, 66, 66);
     }
 }
