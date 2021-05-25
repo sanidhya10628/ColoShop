@@ -476,3 +476,18 @@ input[type=email]{
     font-size: 1.5rem;
     /* background-color: pink; */
 }
+
+.collections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10rem 5rem;
+}
+.collections-img{
+    max-width: 250px;
+    flex-basis: 19%;
+}
+/* .collections-img img{
+    width: 100%;
+} */
