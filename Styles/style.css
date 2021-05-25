@@ -307,3 +307,9 @@ body{
         background-color: rgb(253, 66, 66);
     }
 }
+
+
+.display-new-arrivals{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
