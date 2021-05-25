@@ -491,3 +491,49 @@ input[type=email]{
 /* .collections-img img{
     width: 100%;
 } */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* margin: 8rem 5rem; */
+    background-color: #333533;
+    background-color: #262626;
+    color: white;
+}
+
+.company{
+    flex-basis: 20%;
+}
+.quick-links h3{
+    /* margin-left: 2.2rem; */
+}
+
+.quick-links a{
+    line-height: 2;
+    font-size: 1rem;
+    color: white;
+}
+
+.new-products a{
+    line-height: 2;
+    font-size: 1rem;
+    color: white;
+}
+.support a{
+    line-height: 2;
+    font-size: 1rem;
+    color: white;
+
+}
+.footer ul{
+    list-style: none;
+
+}
+.footer ul a{
+    text-decoration: none;
+}
+
+.heart{
+    color: red;
+}
