@@ -33,16 +33,50 @@ app.get('/users/signup', (req,res) => {
 })
 
 
-app.post('/users/signup', (req,res) => {
-    const newUser = new User(req.body)
-    newUser.save().then(() => {
-        console.log('User saved in database')
-        res.redirect(`/users/${newUser._id}`)
-    }).catch (err => {
-        console.log('Error occured', err)
-    })
-    console.log(req.body)
+app.post('/users/signup', async(req,res) => {
+    try {
+        const newUser = new User(req.body)
+        const check = await User.find({username:newUser.username, email:newUser.email, password:newUser.password})
+        console.log(check)
+        if (JSON.stringify(check) !== '[]') {
+            console.log('Same User')
+            res.redirect(`/users/${check[0]._id}`) 
+        }
+        else {
+            newUser.save().then(() => {
+                console.log('new user logged in')
+            })
+            .catch(err => {
+                console.log('error')
+                console.log(err)
+            })
+            res.redirect(`/users/${newUser._id}`)
+        }
+    }
+    catch {
+        console.log('Sign Up error!!!!')
+    }
 })  
+
+app.get('/users/login', (req,res) => {
+    res.render('login')
+})
+
+app.post('/users/login', async(req,res) => {
+    try {
+        const user = new User(req.body)
+        const check = await User.find({username:user.username, email:user.email, password:user.password})
+        if (JSON.stringify(check) !== '[]') {
+            res.redirect(`/users/${check[0]._id}`)
+        }
+        else {
+            res.send('User by these credentials does not exist please sign up')
+        }
+    }
+    catch {
+        console.log('error')
+    }
+})
 
 
 app.get('/users/:id', async(req,res) => {
