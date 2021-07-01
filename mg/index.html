@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ColoShop</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="mg.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left-container">
+        <span><i class="fas fa-rupee-sign"></i>India</span>
+        <span><i class="fas fa-phone-square-alt"></i>0731-2416368</span>
+      </div>
+      <div class="header-right-container">
+        <ul class="header-links">
+          <a href="/" class="header-single-link">My Account</a>
+          <a href="/" class="header-single-link">Wish List</a>
+          <a href="/" class="header-single-link">Shopping</a>
+          <a href="/" class="header-single-link">Cart</a>
+          <a href="/" class="header-single-link">Checkout</a>
+        </ul>
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="nav-logo">Colo<span>Shop</span></div>
+      <div class="nav-links">
+        <a href="/" class="nav-single-link">Home</a>
+        <a href="/" class="nav-single-link">Shop</a>
+        <a href="/" class="nav-single-link">Categories</a>
+        <a href="/" class="nav-single-link">Contact Us</a>
+      </div>
+      <div class="nav-other-icons">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <div class="nav-toggle">
+          <i class="fas fa-bars sidebar-toggle"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar">
+      <i class="fas fa-times sidebar-close-btn"></i>
+      <div class="sidebar-links">
+        <a href="/" class="sidebar-single-link">Home</a>
+        <a href="/" class="sidebar-single-link">Shop</a>
+        <a href="/" class="sidebar-single-link">Categories</a>
+        <a href="/" class="sidebar-single-link">Contact Us</a>
+      </div>
+    </div>
+    <div class="hero">
+      <span>sale</span>
+    </div>
+
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/f497ae5ec9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script for sidebar toggle on smaller screens -->
+    <script>
+      const sidebar = document.querySelector(".sidebar");
+      const navbar = document.querySelector(".navbar");
+      const hero = document.querySelector(".hero");
+      let sidebarToggle_Button = document.querySelector(".sidebar-toggle");
+      let sidebarClose_I = document.querySelector(".sidebar-close-btn");
+      sidebarToggle_Button.addEventListener("click", () => {
+        sidebar.classList.toggle("show-sidebar");
+        navbar.classList.toggle("hide-navbar");
+        hero.classList.toggle("hide-hero");
+      });
+      sidebarClose_I.addEventListener("click", () => {
+        sidebar.classList.toggle("show-sidebar");
+        navbar.classList.toggle("hide-navbar");
+        hero.classList.toggle("hide-hero");
+      });
+    </script>
+  </body>
+</html>
